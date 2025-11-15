@@ -1,0 +1,15 @@
+package com.example.miniproject2.roomdb
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "users")
+data class UserEntity(
+    @PrimaryKey
+    val id: Int,
+    val name: String,
+    val username: String,
+    val email: String,
+    val phone: String,
+    val website: String
+)
